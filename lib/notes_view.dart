@@ -16,12 +16,12 @@ class NotesView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16)),
                   context: context,
                   builder: (context) {
-                    return CustomAddBottomSheet();
+                    return const CustomAddBottomSheet();
                   });
             },
-            child: Icon(Icons.add)),
-        body: Padding(
-          padding: const EdgeInsets.only(top: 40),
+            child: const Icon(Icons.add)),
+        body: const Padding(
+          padding: EdgeInsets.only(top: 40),
           child: CustomNoteVeiwBody(),
         ));
   }

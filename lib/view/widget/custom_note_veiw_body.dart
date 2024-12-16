@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:note_app/view/widget/custom_app_bar.dart';
-import 'package:note_app/view/widget/custom_note_item.dart';
 import 'package:note_app/view/widget/custom_note_listveiw.dart'; // استخدمه فقط إذا كان ضرورياً
 
 class CustomNoteVeiwBody extends StatelessWidget {
@@ -16,7 +14,10 @@ class CustomNoteVeiwBody extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          CustomAppBar(),
+          CustomAppBar(
+            icon: Icons.search,
+            title: 'Notes',
+          ),
           Expanded(child: CustomNoteListveiw())
         ],
       ),
