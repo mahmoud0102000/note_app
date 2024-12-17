@@ -10,7 +10,7 @@ class CustomNoteItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return EditNoteVeiw();
+          return const EditNoteVeiw();
         }));
       },
       child: Padding(
